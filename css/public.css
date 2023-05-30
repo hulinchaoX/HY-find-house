@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff8a00;
+}
+header .logo {
+  margin-left: 3rem;
+}
+header .logo img {
+  width: 10rem;
+  height: 3.8rem;
+}
+header .logo_right {
+  margin-right: 3rem;
+}
+header .logo_right img {
+  width: 2.3rem;
+  height: 2.9rem;
+  margin-left: 1rem;
+}
+footer {
+  background-color: #2f3130;
+  color: #939494;
+  padding: 0 3rem 1rem 3rem;
+}
+footer h2 {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #3c3e3d;
+}
+footer ul {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+footer ul li {
+  display: flex;
+  justify-items: center;
+}
+footer ul li img {
+  margin-right: 1.5rem;
+  width: 3rem;
+  height: 3.1rem;
+}
+footer ul li .iphone p {
+  font-size: 1.6rem;
+}
+footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2.5rem;
+}

@@ -2,3 +2,297 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #f5f5f5;
+}
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff8a00;
+}
+header .logo {
+  margin-left: 3rem;
+}
+header .logo img {
+  width: 10rem;
+  height: 3.8rem;
+}
+header .logo_right {
+  margin-right: 3rem;
+}
+header .logo_right img {
+  width: 2.3rem;
+  height: 2.9rem;
+}
+main .top {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  background: url(../image/index/banner.png) no-repeat;
+  background-size: cover;
+}
+main .top input {
+  width: 90%;
+  height: 4rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  border-radius: 1rem;
+  outline: none;
+  padding-left: 4.5rem;
+  background: url(../image/index/seach.jpg) no-repeat 1rem center;
+  background-color: white;
+  background-size: 3rem 3rem;
+}
+main .top input::placeholder {
+  font-size: 14px;
+}
+main .nav {
+  width: 100%;
+  background-color: #ff8a00;
+  padding: 1rem 0;
+}
+main .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .nav ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+main .nav ul li a img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+}
+main .nav ul li a span {
+  font-size: 1.4rem;
+  color: white;
+}
+main .real {
+  margin: 1rem 0;
+}
+main .real img {
+  width: 100%;
+  height: 100%;
+}
+main .hot {
+  background-color: #ff8a00;
+  padding: 1rem 2rem;
+}
+main .hot h2 {
+  font-size: 1.8rem;
+  color: white;
+}
+main .hot span {
+  color: white;
+  font-size: 1.2rem;
+}
+main .house {
+  padding: 0 1rem;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+main .house .otherHouse {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  margin: 0 1rem;
+  border-bottom: 1px solid #ff3131;
+}
+main .house .otherHouse:nth-of-type(3) {
+  border: none;
+}
+main .house .otherHouse .pic {
+  margin-right: 1rem;
+}
+main .house .otherHouse .pic img {
+  width: 10rem;
+}
+main .house .otherHouse .text {
+  flex: 1;
+}
+main .house .otherHouse .text h2 {
+  width: 18.7rem;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+main .house .otherHouse .text p {
+  display: flex;
+  justify-content: space-between;
+  width: 18.7rem;
+  margin-bottom: 1rem;
+}
+main .house .otherHouse .text p a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+main .house .otherHouse .text p span {
+  font-weight: 700;
+  color: #ff8a00;
+  font-size: 1.2rem;
+}
+main .house .otherHouse .text p .gray {
+  color: #999;
+}
+main .house .otherHouse .text h3 {
+  display: flex;
+  justify-content: flex-start;
+}
+main .house .otherHouse .text h3 span {
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.2rem;
+  background-color: #eef4f8;
+  color: #93a8bb;
+  margin-right: 0.5rem;
+}
+main .attention {
+  background-color: white;
+}
+main .attention .active {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ff8a00;
+  overflow: hidden;
+}
+main .attention .active p {
+  height: 5rem;
+  line-height: 5rem;
+  width: 50%;
+  text-align: center;
+}
+main .attention .active p:nth-of-type(1) {
+  border-bottom: 1px solid #ff8a00;
+  padding-bottom: 4rem;
+  box-sizing: border-box;
+}
+main .attention .active p a {
+  text-decoration: none;
+  color: #666666;
+  font-weight: 400;
+  font-size: 2rem;
+}
+main .attention .active p:nth-of-type(1) a {
+  color: #ff8a00;
+}
+main .attention .actives {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0;
+}
+main .attention .actives ul {
+  list-style: none;
+}
+main .attention .actives ul li {
+  width: 10rem;
+  line-height: 2.3rem;
+}
+main .attention .actives ul li a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 1.4rem;
+}
+.free {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(127, 127, 127, 0.5);
+}
+.free .down {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.free .down .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.free .down img {
+  margin-right: 2rem;
+}
+.free .down img:nth-of-type(1) {
+  width: 1.5rem;
+}
+.free .down img:nth-of-type(2) {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: 1.2rem;
+}
+.free .down .txt {
+  padding-top: 1rem;
+  width: 20rem;
+}
+.free .down .txt p {
+  color: white;
+}
+.free .down .txt p:nth-of-type(1) {
+  font-size: 1.6rem;
+}
+.free .down .txt p:nth-of-type(2) {
+  font-size: 1.2rem;
+}
+.free .down .downLoad {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background-color: #ff8a00;
+}
+.free .down .downLoad a {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  margin-right: 3rem;
+}
+footer {
+  background-color: #2f3130;
+  color: #939494;
+  padding: 0 3rem 1rem 3rem;
+}
+footer h2 {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #3c3e3d;
+}
+footer ul {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+footer ul li {
+  display: flex;
+  justify-items: center;
+}
+footer ul li img {
+  margin-right: 1.5rem;
+  width: 3rem;
+  height: 3.1rem;
+}
+footer ul li .iphone p {
+  font-size: 1.6rem;
+}
+footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
