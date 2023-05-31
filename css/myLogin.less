@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff8a00;
+  .logo {
+    margin-left: 3rem;
+    img{
+        width: 10rem;
+        height: 3.8rem;
+    }
+  }
+  .logo_right {
+    margin-right: 3rem;
+    img {
+      width: 2.3rem;
+      height: 2.9rem;
+      margin-left: 2rem;
+    }
+  }
+}
+.user{
+    height: 15rem;
+    padding-top: 3rem;
+    background: url(../image/my/bg2.png) no-repeat;
+    background-size: cover;
+    .btn{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        img{
+            width: 6rem;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        a{
+            // width: 4rem;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 auto;
+            color: white;
+            font-size: 1.4rem;
+            padding: .5rem 1rem;
+        }
+    }
+}
+.nav{
+    padding: 1rem 2rem;
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    justify-content: flex-start;
+    background-color: #fff;
+    h2{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+  }
+  .my{
+    ul{
+        background-color: #fff;
+        list-style: none;
+        padding: 0 2rem;
+        li{
+            height: 5rem;
+            line-height: 5rem;
+            border-bottom: .1rem solid #d1cfcf;
+            padding-right: 2rem;
+            background: url(../image/my/right.png) no-repeat right center;
+            background-size: 1rem;
+            a{
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: #6b6969;
+               
+            }
+        }
+    }
+}
+.out{
+    width: 90%;
+    border: 0.1rem solid #ccc;
+    margin: 3rem auto;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    a{
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem 0;
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: #ff9142;
+    }
+}
