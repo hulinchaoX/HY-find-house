@@ -5,13 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <title>找房无忧-登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+   
 </head>
 
 <body>
-<h2>H</h2>
+        <!-- 头部 -->
+        <header>
+            <div class="logo">
+                <img src="./image/index/logo.jpg" alt="">
+            </div>
+            <div class="logo_right">
+                <img src="./image/index/my.jpg" alt="">
+                <img src="./image/index/xiazai.jpg" alt="">
+            </div>
+        </header>
+        <div class="nav">
+            <h2>首页 ></h2>
+            <h3> 我的 ></h3>
+            <h3>登录</h3>
+        </div>
+        <div class="login">
+            <span class="active">普通登录</span>
+            <span>验证码快捷登录</span>
+        </div>
+        <div class="loginLeft">
+            <input type="text" placeholder="请输入手机号">
+            <input type="text" placeholder="请输入密码">
+            <button>立即登录</button>
+        </div>
+        <div class="loginRight">
+            <span id="yzm">发送验证码</span>
+            <input type="text" placeholder="请输入手机号">
+            
+            <input type="text" placeholder="请输入短信中的验证码">
+            <button>验证并登录</button>
+        </div>
+        <div class="register">
+            <a href="#">立即注册</a>
+            <a href="#">忘记密码</a>
+        </div>
 </body>
 
 </html>
+<script src="./js/remstyle.js"></script>
+<script>
+    var span=document.getElementsByClassName('login')[0].children
+    var left=document.getElementsByClassName('loginLeft')[0]
+    var right=document.getElementsByClassName('loginRight')[0]
+    for (var i=0;i<span.length;i++){
+        span[i].setAttribute('index',i)
+        span[i].onclick=function(){
+            var index=this.getAttribute('index')
+            for(var j=0;j<span.length;j++){
+                span[j].classList.remove('active')
+                span[index].classList.add('active')
+                if(index==0){
+                    left.style.display='block'
+                    right.style.display='none'
+                }else if(index==1){
+                    left.style.display='none'
+                    right.style.display='block'
+                }
+            }
+        }
+    }
+    var yzm=document.querySelector('#yzm')
+    console.log(yzm);
+    var num=60
+    var timer;
+    yzm.onclick=function(){
+        clearInterval(timer)
+        timer=setInterval(function(){
+            num--;
+            yzm.innerHTML=`（${num}秒）后重发`
+            if(num==0){
+                yzm.innerHTML='重新发送验证码'
+                clearInterval(timer)
+                num=60
+            }
+        },1000)
+    }
+</script>

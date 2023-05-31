@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5f5f5;
+}
+header {
+  height: 23rem;
+  background: url(../image/my/bg1.png) no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+header .top {
+  margin-right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  height: 5rem;
+}
+header .top a {
+  font-size: 1.4rem;
+  color: white;
+  padding-top: 3rem;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+header .top a:nth-of-type(1) {
+  background: url(../image/my/urse.png) no-repeat center 0.6rem;
+  background-size: 2rem 2rem ;
+}
+header .top a:nth-of-type(2) {
+  background: url(../image/my/down.png) no-repeat center 0.6rem;
+  background-size: 2rem 2rem ;
+}
+header .btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+header .btn img {
+  width: 6rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+header .btn a {
+  width: 4rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid white;
+}
+.my ul {
+  background-color: #fff;
+  list-style: none;
+  padding: 0 2rem;
+}
+.my ul li {
+  height: 5rem;
+  line-height: 5rem;
+  border-bottom: 0.1rem solid #d1cfcf;
+  padding-right: 2rem;
+  background: url(../image/my/right.png) no-repeat right center;
+  background-size: 1rem;
+}
+.my ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #6b6969;
+  padding-left: 3rem;
+}
+.my ul li:nth-of-type(1) a {
+  background: url(../image/my/icon1.png) no-repeat 0 center;
+  background-size: 2rem 2rem;
+}
+.my ul li:nth-of-type(2) a {
+  background: url(../image/my/icon2.png) no-repeat 0 center;
+  background-size: 2rem 2rem;
+}
+.my ul li:nth-of-type(3) a {
+  background: url(../image/my/icon3.png) no-repeat 0 center;
+  background-size: 2rem 2rem;
+}
+.my ul li:nth-of-type(4) a {
+  background: url(../image/my/icon4.png) no-repeat 0 center;
+  background-size: 2rem 2rem;
+}
