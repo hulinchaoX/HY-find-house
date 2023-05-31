@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #F5F5F5;
+}
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff8a00;
+}
+header .logo {
+  margin-left: 3rem;
+}
+header .logo img {
+  width: 10rem;
+  height: 3.8rem;
+}
+header .logo_right {
+  margin-right: 3rem;
+}
+header .logo_right img {
+  width: 2.3rem;
+  height: 2.9rem;
+  margin-left: 1rem;
+}
+/* 图片部分以及下方 */
+.pic {
+  width: 100%;
+  height: 20.5rem;
+  position: relative;
+}
+.pic .img5 {
+  width: 100%;
+  height: 20.5rem;
+}
+.pic .share {
+  width: 5rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  background-color: rgba(53, 51, 51, 0.8);
+  position: absolute;
+  bottom: 1rem;
+  right: 0rem;
+}
+nav {
+  padding: 2rem;
+  background-color: #fff;
+}
+nav h2 {
+  font-size: 2rem;
+}
+nav p {
+  font-size: 1.6rem;
+  height: 4rem;
+  line-height: 4rem;
+  background: url(../image/SecondHandList/phone.png) no-repeat right center;
+  background-size: 1.5rem;
+}
+nav p span {
+  color: #db4c3f;
+}
+nav .guapai {
+  font-size: 1.4rem;
+  color: #b0b0b0;
+  background: none;
+}
+nav .bottom {
+  display: flex;
+  padding: 2rem 0;
+}
+nav .bottom .item {
+  padding: 0.5rem;
+  margin-right: 2rem;
+  color: #849aae;
+  background: #f4f7f9;
+  font-size: 1.4rem;
+}
+/* 房源信息 */
+.information {
+  border: 1px solid #dcdcdc;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.information li {
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 1.4rem;
+  display: flex;
+  border-bottom: 1px solid #dcdcdc;
+}
+.information li p {
+  width: 50%;
+}
+.information li .yihang {
+  width: 80%;
+}
+.information .last {
+  text-align: center;
+  border-bottom: none;
+}
+.information .last p {
+  width: 100%;
+  color: #b0b0b0;
+}
+/* 房源特色 */
+.characteristics {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+}
+.characteristics h3 {
+  height: 6.5rem;
+  line-height: 6.5rem;
+  border-bottom: 1px solid #dcdcdc;
+  color: #ff8a00;
+  font-size: 2rem;
+}
+.characteristics p {
+  padding: 2rem 0;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.characteristics span {
+  color: #b0b0b0;
+  font-size: 1.4rem;
+  height: 6.5rem;
+  line-height: 6.5rem;
+  display: block;
+  text-align: center;
+}
+/* 户型分间 */
+.type {
+  border: 1px solid #dcdcdc;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.type h3 {
+  height: 6.5rem;
+  line-height: 6.5rem;
+  border-bottom: 1px solid #dcdcdc;
+  color: #ff8a00;
+  font-size: 2rem;
+}
+.type .present {
+  padding: 2rem 0;
+  display: flex;
+  border-bottom: 1px solid #ff8a00;
+}
+.type .present:nth-of-type(2) {
+  border-bottom: none;
+}
+.type .present .left {
+  width: 9rem;
+}
+.type .present .left img {
+  width: 100%;
+}
+.type .present .right {
+  flex: 1;
+  margin-left: 1rem;
+}
+.type .present .right h2 {
+  font-size: 1.6rem;
+}
+.type .present .right p {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+}
+.type .present .right .bottom {
+  display: flex;
+}
+.type .present .right .bottom .item {
+  padding: 0.5rem;
+  margin-right: 2rem;
+  color: #849aae;
+  background: #f4f7f9;
+  font-size: 1.4rem;
+}
+/* 对口学校 */
+.school {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #dcdcdc;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+}
+.school li {
+  height: 6rem;
+  line-height: 6rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.school li h3 {
+  font-size: 2rem;
+}
+.school li:nth-last-child(1) {
+  border-bottom: none;
+}
+.school li p span {
+  color: #999;
+}
+.school li .last {
+  color: #999;
+  text-align: center;
+}
+/* 位置及周边 */
+.place {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.place h3 {
+  font-size: 2rem;
+  height: 6rem;
+  line-height: 6rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.place img {
+  width: 100%;
+  margin: 2rem 0;
+}
+/*推荐房源  */
+.recommend {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
+.recommend h3 {
+  font-size: 2rem;
+  height: 6rem;
+  line-height: 6rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.recommend main {
+  display: flex;
+  padding: 2rem 0;
+}
+.recommend main:nth-of-type(2) {
+  border-top: 1px solid #dcdcdc;
+  margin-top: 2rem;
+}
+.recommend main .left {
+  width: 10rem;
+  padding-top: 1rem;
+}
+.recommend main .left img {
+  width: 100%;
+}
+.recommend main .right {
+  flex: 1;
+  height: 12rem;
+  margin-left: 2rem;
+}
+.recommend main .right h4 {
+  font-size: 2rem;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.recommend main .right p {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.recommend main .right p:nth-of-type(2) {
+  color: #999999;
+}
+.recommend main .right p:nth-of-type(2) span {
+  color: #999999;
+}
+.recommend main .right p span {
+  color: #ff8a00;
+}
+.recommend main .right .item {
+  display: inline-block;
+  padding: 0.5rem;
+  margin-right: 2rem;
+  color: #849aae;
+  background: #f4f7f9;
+  font-size: 1.4rem;
+}
+.recommend .bottom {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  background-color: #F2F2F2;
+}
+.recommend .bottom span {
+  width: 0;
+  height: 0;
+  border-right: 1.5rem solid transparent;
+  border-left: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid #F2F2F2;
+  position: absolute;
+  top: -13px;
+  left: 17px;
+}
+.more {
+  width: 100%;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  color: #666666;
+  font-size: 1.4rem;
+  background-color: #fff;
+}
+footer {
+  min-width: 168px;
+  background-color: #2f3130;
+  color: #939494;
+  padding: 0 3rem 1rem 3rem;
+}
+footer h2 {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #3c3e3d;
+}
+footer ul {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+footer ul li {
+  display: flex;
+  justify-items: center;
+}
+footer ul li img {
+  margin-right: 1.5rem;
+  width: 3rem;
+  height: 3.1rem;
+}
+footer ul li .iphone p {
+  font-size: 1.6rem;
+}
+footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.relation {
+  width: 100%;
+  height: 7rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+}
+.relation .peoper {
+  width: 24rem;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  background: url(../image/SecondHandList/user.png) no-repeat 4.1rem 0.8rem;
+  background-size: 3rem;
+  background-color: #FF8A00;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+.relation .xin {
+  flex: 1;
+  background: url(../image/SecondHandList/xin.png) no-repeat 2.1rem 0.9rem;
+  background-size: 3rem;
+  font-size: 1.4rem;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  text-align: right;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}

@@ -5,13 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <title>注册··</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="./js/setRem.js"></script>
 </head>
 
 <body>
-<h2>h</h2>
+    <!-- 头部 -->
+    <header>
+        <div class="logo">
+            <img src="./image/index/logo.jpg" alt="">
+        </div>
+        <div class="logo_right">
+            <img src="./image/index/my.jpg" alt="">
+            <img src="./image/index/xiazai.jpg" alt="">
+        </div>
+    </header>
+    <nav>
+        <span>首页 </span> > 我的 > 注册
+    </nav>
+    <div class="item">
+        <input type="text" placeholder="请输入手机号" class="phone">
+        <button id="btn" onclick="getCode()">发送验证码</button>
+    </div>
+    <div class="item">
+        <input type="text" placeholder="请输入短信中的验证码">
+    </div>
+    <div class="item">
+        <input type="text" placeholder="请输入新密码">
+    </div>
+    <button class="btn1">立即注册</button>
 </body>
 
 </html>
+<script>
+    var btn = document.getElementById('btn');
+    var num = 60;
+    var timer;
+    function getCode() {
+        clearInterval(timer);
+        timer = setInterval(function () {
+            btn.innerHTML = `(${num}秒) 重发`
+            num--;
+            if (num < 0) {
+                clearInterval(timer);
+                btn.innerHTML = '获取验证码';
+                num = 60;
+            }
+        }, 1000)
+    };
+
+</script>

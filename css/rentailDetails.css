@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff8a00;
+}
+header .logo {
+  margin-left: 3rem;
+}
+header .logo img {
+  width: 10rem;
+  height: 3.8rem;
+}
+header .logo_right {
+  margin-right: 3rem;
+}
+header .logo_right img {
+  width: 2.3rem;
+  height: 2.9rem;
+  margin-left: 1rem;
+}
+nav {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.4rem;
+  background-color: #FFFFFF;
+  line-height: 3rem;
+  padding-left: 2rem;
+}
+nav span {
+  font-weight: 800;
+}
+.pic {
+  width: 100%;
+  height: 20.5rem;
+  position: relative;
+}
+.pic .img5 {
+  width: 100%;
+  height: 20.5rem;
+}
+.pic .share {
+  width: 6rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  background-color: #353333;
+  position: absolute;
+  bottom: 1rem;
+  right: 0rem;
+}
+.mainText {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  border-bottom: 1px solid #dcdcdc;
+}
+.mainText h2 {
+  font-size: 1.9rem;
+  flex: 1;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+.mainText a {
+  width: 8rem;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 11rem;
+  background: url(../image/rentalList/xin.png) no-repeat 2.6rem 1.3rem;
+  background-size: 3rem;
+  text-align: center;
+  border-left: 1px solid #dcdcdc;
+}
+.houseMes1 {
+  width: 100%;
+  height: 12rem;
+  background-color: #F5F5F5;
+  padding: 3rem 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+}
+.houseMes1 li {
+  width: 30rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.houseMes1 li:nth-of-type(2) {
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+.houseMes1 li p {
+  margin: 1rem 0;
+}
+.houseMes1 li span {
+  color: #ff8a00;
+}
+.houseMes2 {
+  width: 100%;
+  padding: 0 3rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dcdcdc;
+}
+.houseMes2 li {
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 1.4rem;
+  display: flex;
+  border-bottom: 1px solid #dcdcdc;
+}
+.houseMes2 li p {
+  flex: 1;
+}
+.item {
+  margin: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #dcdcdc;
+}
+.item h3 {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #dcdcdc;
+  color: #ff8a00;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background: url(../image/rentalList/right.png) no-repeat 31.1rem center;
+}
+.item p {
+  line-height: 2.5rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+.item p span {
+  color: #de6843;
+}
+.item .adress {
+  margin: 1rem;
+  border: 1px solid #dcdcdc;
+}
+.item .adress h4 {
+  font-size: 1.7rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+.item .adress img {
+  width: 100%;
+}
+.zhangsan {
+  width: 100%;
+  height: 8rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+}
+.zhangsan img {
+  height: 6rem;
+}
+.zhangsan .word {
+  flex: 1;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-left: 1.5rem;
+}
+.zhangsan .right {
+  width: 11rem;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 10rem;
+  font-size: 1.6rem;
+}
+.zhangsan .right .telephone {
+  width: 7rem;
+  background: url(../image/rentalList/icon1.png) no-repeat 0px 0px;
+  background-size: 4rem;
+  padding-left: 0.2rem;
+  color: #5DCB96;
+}
+.zhangsan .right .note {
+  width: 7rem;
+  background: url(../image/rentalList/icon2.png) no-repeat 0px 0px;
+  background-size: 4rem;
+  padding-left: 0.4rem;
+  color: #5BAEDE;
+}
+footer {
+  min-width: 168px;
+  background-color: #2f3130;
+  color: #939494;
+  padding: 0 3rem 1rem 3rem;
+}
+footer h2 {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #3c3e3d;
+}
+footer ul {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+footer ul li {
+  display: flex;
+  justify-items: center;
+}
+footer ul li img {
+  margin-right: 1.5rem;
+  width: 3rem;
+  height: 3.1rem;
+}
+footer ul li .iphone p {
+  font-size: 1.6rem;
+}
+footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
