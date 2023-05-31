@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="hide"></div>
     <!-- 头部 -->
     <header>
         <div class="logo">
@@ -32,12 +33,113 @@
         <span></span>
         <a href="#"><img src="./image/SecondHandList/search_03.png" alt=""></a>
     </section>
+    <!-- 列表点击 -->
     <ul class="list">
-        <li>区域 <span></span></li>
-        <li>月租 <span></span></li>
-        <li>房型 <span></span></li>
-        <li>更多 <span></span></li>
+        <li class="dj">区域 <span></span></li>
+        <li class="dj">月租 <span></span></li>
+        <li class="dj">房型 <span></span></li>
+        <li class="dj">更多 <span></span></li>
     </ul>
+
+    <ul class="list listTop" style="display: none;">
+        <li class="djTop">区域 <span class="span_"></span> <i class="shift" style="display: none;"></i></li>
+        <li class="djTop">月租 <span class="span_"></span><i class="shift" style="display: none;"></i></li>
+        <li class="djTop">房型 <span class="span_"></span><i class="shift" style="display: none;"></i></li>
+        <li class="djTop">更多 <span class="span_"></span><i class="shift" style="display: none;"></i></li>
+    </ul>
+    <!-- item1部分 -->
+    <div class="item item1" style="display: none;">
+        <div class="content">
+            <ul class="left">
+                <li>区域</li>
+                <li>地铁</li>
+            </ul>
+            <div class="right">
+                <ul class="fujin">
+                    <li>附近</li>
+                    <li>不限</li>
+                    <li>朝阳</li>
+                    <li>海淀</li>
+                    <li>昌平</li>
+                    <li>丰台</li>
+                    <li>石景山</li>
+                </ul>
+                <ul class="buxian">
+                    <li>不限</li>
+                    <li>安贞</li>
+                    <li>奥林匹克公园</li>
+                    <li>百子湾</li>
+                    <li>北工大</li>
+                    <li>北苑</li>
+                    <li>CBD</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- item2部分 -->
+    <div class="item item2" style="display: none;">
+
+        <ul class="yibaiwan">
+            <li>100万以下</li>
+            <li>100万-150万</li>
+            <li>150万-200万</li>
+            <li>200万-250万</li>
+            <li>250万-300万</li>
+            <li>自定义价格</li>
+        </ul>
+    </div>
+
+    <!-- item3部分 -->
+    <div class="item item3" style="display: none;">
+        <ul class="yishi">
+            <li>不限</li>
+            <li>1室 <span></span></li>
+            <li>2室 <span></span></li>
+            <li>3室 <span></span></li>
+            <li>4室 <span></span></li>
+            <li>5室 <span></span></li>
+            <button>确定</button>
+        </ul>
+    </div>
+
+    <!-- item4部分 -->
+    <div class="item item4" style="display:none;">
+        <h5>区域</h5>
+        <ul class="quyu">
+            <li>南</li>
+            <li>南北</li>
+            <li>东</li>
+            <li>西</li>
+            <li>北</li>
+        </ul>
+        <h5>面积（平方）</h5>
+        <ul class="quyu">
+            <li>50以下</li>
+            <li>50-70</li>
+            <li>70-90</li>
+            <li>90-110</li>
+            <li>110-130</li>
+            <li>130-150</li>
+            <li>150-200</li>
+            <li>200以上</li>
+        </ul>
+        <h5>标签</h5>
+        <ul class="quyu">
+            <li>学区房</li>
+            <li>地铁房</li>
+            <li>不限购</li>
+            <li>满两年</li>
+            <li>满五唯一</li>
+            <li>降价</li>
+            <li>新上</li>
+            <li>独家</li>
+            <li>有钥匙</li>
+        </ul>
+        <p>清空条件</p>
+        <button>确定</button>
+
+    </div>
     <!-- 房型详情列表 -->
     <ul class="details">
         <li>
@@ -54,7 +156,7 @@
                 </div>
             </div>
         </li>
-        <li>    
+        <li>
             <div class="left">
                 <img src="./image/rentalList/img2.png" alt="">
             </div>
@@ -138,3 +240,75 @@
 </body>
 
 </html>
+<script>
+    var hide = document.querySelector('.hide');
+    var dj = document.getElementsByClassName('dj');
+    var listTop = document.getElementsByClassName('listTop')[0];
+    var djTop = document.getElementsByClassName('djTop');
+    var item = document.getElementsByClassName('item');
+    var span_ = document.getElementsByClassName('span_');
+    var shift = document.getElementsByClassName('shift');
+    for (var i = 0; i < djTop.length; i++) {
+        djTop[i].setAttribute('index', i);
+        djTop[i].onclick = function () {
+
+            var index = this.getAttribute('index');
+            for (var j = 0; j < djTop.length; j++) {
+                djTop[j].classList.remove('active');
+                djTop[index].classList.add('active');
+            }
+            for (var k = 0; k < item.length; k++) {
+                item[k].style.display = 'none';
+                item[index].style.display = 'block';
+            }
+            for (var l = 0; l < span_.length; l++) {
+                span_[l].style.display = 'block';
+                span_[index].style.display = 'none';
+            }
+            for (var m = 0; m < shift.length; m++) {
+                shift[m].style.display = 'none';
+                shift[index].style.display = 'block';
+            }
+        }
+    }
+    for (var a = 0; a < dj.length; a++) {
+        dj[a].setAttribute('indexx', a);
+        dj[a].onclick = function () {
+            listTop.style.display = 'block';
+            hide.style.display = 'block';
+            var indexx = this.getAttribute('indexx');
+            for (var j = 0; j < djTop.length; j++) {
+                djTop[j].classList.remove('active');
+                djTop[indexx].classList.add('active');
+            }
+            for (var k = 0; k < item.length; k++) {
+                item[k].style.display = 'none';
+                item[indexx].style.display = 'block';
+            }
+            for (var l = 0; l < span_.length; l++) {
+                span_[l].style.display = 'block';
+                span_[indexx].style.display = 'none';
+            }
+            for (var m = 0; m < shift.length; m++) {
+                shift[m].style.display = 'none';
+                shift[indexx].style.display = 'block';
+            }
+        }
+    }
+    hide.onclick = function () {
+        hide.style.display = 'none';
+        listTop.style.display = 'none';
+        for (var j = 0; j < djTop.length; j++) {
+            djTop[j].classList.remove('active');
+        }
+        for (var k = 0; k < item.length; k++) {
+            item[k].style.display = 'none';
+        }
+        for (var l = 0; l < span_.length; l++) {
+            span_[l].style.display = 'block';
+        }
+        for (var m = 0; m < shift.length; m++) {
+            shift[m].style.display = 'none';
+        }
+    }
+</script>
