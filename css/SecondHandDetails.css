@@ -33,6 +33,7 @@ header .logo_right img {
   height: 2.9rem;
   margin-left: 1rem;
 }
+/* 图片部分以及下方 */
 .pic {
   width: 100%;
   height: 20.5rem;
@@ -56,7 +57,7 @@ header .logo_right img {
   right: 0rem;
 }
 nav {
-  margin: 2rem;
+  padding: 2rem;
   background-color: #fff;
 }
 nav h2 {
